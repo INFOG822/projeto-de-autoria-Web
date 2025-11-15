@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 2</title>
+
+<style>
+    /* Fundo laranja cobrindo a tela */
+    body {
+        margin: 0;
+        padding: 0;
+        background: #F3AC3C; /* laranja forte */
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Quadrado verde escuro */
+    .verde-escuro {
+        width: 600px;
+        height: 400px;
+        background: #1A4341; /* verde escuro */
+        position: relative;
+    }
+
+    /* Quadrado laranja desbotado */
+    .laranja-desbotado {
+        width: 180px;
+        height: 130px;
+        background: #998235; /* laranja desbotado */
+        position: absolute;
+        bottom: 0;   /* colado na borda inferior */
+        left: 0;     /* colado na borda esquerda */
+    }
+
+    /* Quadrado laranja forte (pequeno) */
+    .laranja-forte {
+        width: 70px;
+        height: 70px;
+        background: #F3AC3C; /* laranja forte */
+        position: absolute;
+        bottom: 0;    /* colado na borda inferior */
+        right: 0;     /* colado na borda direita */
+    }
+</style>
+</head>
+
+<body>
+    <div class="verde-escuro">
+        <div class="laranja-desbotado">
+            <div class="laranja-forte"></div>
+        </div>
+    </div>
+</body>
+</html>

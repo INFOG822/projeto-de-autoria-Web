@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exercício 1</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .quadro {
+        width: 400px;
+        height: 235px;
+        background: #d65b4a; 
+        position: relative;
+    }
+
+    .barra {
+        position: absolute;
+        height: 25px;
+        background: #f6db63;
+    }
+
+    /* ---- BARRAS SUPERIORES (LADO DIREITO) ---- */
+    .b1 { top: 0px; right: 0px; width: 200px; }
+    .b2 { top: 40px; right: 0px; width: 200px; }
+    .b3 { top: 80px; right: 0px; width: 200px; }
+
+    /* ---- BARRAS INFERIORES (LADO ESQUERDO) ---- */
+    .b4 { top: 130px; left: 0px; width: 200px; }
+    .b5 { top: 170px; left: 0px; width: 200px; }
+    .b6 { top: 210px; left: 0px; width: 200px; }
+</style>
+
+</head>
+<body>
+
+<div class="quadro">
+ 
+    <div class="barra b1"></div>
+    <div class="barra b2"></div>
+    <div class="barra b3"></div>
+
+  
+    <div class="barra b4"></div>
+    <div class="barra b5"></div>
+    <div class="barra b6"></div>
+</div>
+
+</body>
+</html>
