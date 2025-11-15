@@ -1,0 +1,142 @@
+/* Faz a página rolar suavemente quando clica nos links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilo geral do corpo da página */
+body {
+  font-family: "Poppins", sans-serif; /* tipo da letra */
+  background-color: #b8b1ac;          /* cor de fundo */
+  color: #333;                         /* cor do texto */
+  line-height: 2.2;                    /* altura entre as linhas */
+}
+
+/* Área inicial grande com imagem de fundo (hero) */
+.hero {
+  height: 70vh; /* ocupa 70% da tela */
+  
+  /* fundo escuro transparente por cima da imagem */
+  background: linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)),
+              url('../img/livros-bg.jpg') center/cover no-repeat;
+
+  text-shadow: 1px 1px 3px #000; /* sombra no texto */
+}
+
+/* Títulos das seções */
+.section-title {
+  font-family: "Playfair Display", serif; /* fonte elegante */
+  color: #4b0b18;                         /* cor do título */
+  position: relative;
+}
+
+/* Linha decorativa embaixo do título */
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #4b0b18;
+  display: block;
+  margin: 8px auto 0;
+}
+
+/* Estilo geral do body (outra versão — essa sobrescreve a primeira) */
+body {
+  font-family: Georgia, serif;
+  background-color: #f8f3e7;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho do site */
+header {
+  background-color: #d2b48c; /* cor do fundo do topo */
+  color: #2f1e1e;            /* cor da letra */
+  text-align: center;        /* centraliza tudo */
+  padding: 40px 15px;
+  border-bottom: 4px solid #b18b5e; /* linha decorativa abaixo */
+}
+
+/* Título principal no topo */
+header h1 {
+  font-size: 3rem;  /* tamanho da letra */
+  font-weight: bold;
+  letter-spacing: 1px; /* espaço entre as letras */
+}
+
+/* Barra de navegação */
+nav {
+  background-color: #b18b5e;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Links do menu */
+nav a {
+  color: #fff8dc;           /* cor clara */
+  text-decoration: none;    /* tira o sublinhado */
+  margin: 0 15px;           /* espaço entre os links */
+  font-weight: bold;
+}
+
+/* Substitui quando passa o mouse */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Cada seção do site */
+section {
+  padding: 40px 20px;  /* espaço interno */
+  max-width: 1100px;   /* largura máxima */
+  margin: auto;        /* centraliza */
+}
+
+/* Título das seções */
+h2 {
+  color: #4b2e05;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #b18b5e; /* linha embaixo */
+  display: inline-block;
+}
+
+/* Grade de cartões dos autores */
+.grade {
+  display: grid; /* ativa o grid */
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px; /* espaço entre os cards */
+}
+
+/* Cada cartão de autor */
+.card {
+  background-color: #fffaf3;
+  border: 1px solid #ccbca3;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s; /* animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  background-color: #f1e2cc;
+  transform: translateY(-4px); /* levanta um pouquinho */
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%;       /* ocupa toda a largura do card */
+  height: 250px;     /* altura fixa */
+  object-fit: contain; /* encaixa a imagem sem cortar */
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Rodapé do site */
+footer {
+  background-color: #b18b5e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
