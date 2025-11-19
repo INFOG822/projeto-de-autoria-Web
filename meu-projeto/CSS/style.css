@@ -140,3 +140,59 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+/* ================================
+   MEDIA QUERIES — RESPONSIVIDADE
+================================ */
+
+/* Telas até 900px (tablets) */
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+}
+
+/* Telas até 600px (celulares) */
+@media (max-width: 600px) {
+
+  /* Reduz o tamanho do topo */
+  header {
+    padding: 25px 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Menu mais espaçado */
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* Seções mais estreitas */
+  section {
+    padding: 25px 15px;
+  }
+
+  /* Cards ajustados */
+  .card {
+    padding: 10px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  /* Grade vira 1 coluna em telas pequenas */
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}
