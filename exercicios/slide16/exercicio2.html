@@ -2,62 +2,54 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Exercício 3</title>
+<title>Exercício 2</title>
 
 <style>
     body {
         margin: 0;
-        background: #b593b2;
+        background: #F3AC3C;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        font-family: Arial, sans-serif;
     }
 
+    /* Quadrado maior  */
     .container {
-        width: 450px;
-        height: 350px;
-        background: #930893; 
-        border-radius: 8px;
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        padding: 50px;
-        box-sizing: border-box;
+        width: 400px;
+        height: 300px;
+        background: #1A4341;
+        position: relative;
     }
 
-    .coluna {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 95%;
+    /* Quadrado laranja desbotado */
+    .laranja-claro {
+        width: 150px;
+        height: 130px;
+        background: #998235;
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
 
-    .quadrado {
-        width: 60px;
-        height: 60px;
-        background: #f2c47b; 
-        border-radius: 0px;
+    /* Quadrado laranja forte  */
+    .laranja {
+        width: 70px;
+        height: 70px;
+        background: #F3AC3C;
+        position: absolute;
+        bottom: 0;
+        right: 0; /* canto inferior direito do laranja-claro */
     }
 </style>
+
 </head>
 <body>
 
 <div class="container">
-
-    <!-- esquerdo -->
-    <div class="coluna">
-        <div class="quadrado"></div>
-        <div class="quadrado"></div>
+    <div class="laranja-claro">
+        <div class="laranja"></div>
     </div>
-
-    <!-- direito -->
-    <div class="coluna">
-        <div class="quadrado"></div>
-        <div class="quadrado"></div>
-    </div>
-
 </div>
 
 </body>

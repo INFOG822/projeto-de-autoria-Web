@@ -6,28 +6,41 @@
     <title>Exercício 3</title>
 
     <style>
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
+            background: #000; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .f1 { height: 12vh; background-color: #F7EC7D; }
-        .f2 { height: 20vh; background-color: #E38F66; }
-        .f3 { height: 20vh; background-color: #AA445F; }
-        .f4 { height: 23vh; background-color: #62306D; }
-        .f5 { height: 25vh; background-color: #2C2233; }
+        /* QUADRO PRINCIPAL */
+        .quadro {
+            width: 400px;
+            height: 300px;
+        }
+
+        /* FAIXAS  */
+        .f1 { height: 36px; background-color: #F7EC7D; }
+        .f2 { height: 60px; background-color: #E38F66; }
+        .f3 { height: 60px; background-color: #AA445F; }
+        .f4 { height: 69px; background-color: #62306D; }
+        .f5 { height: 75px; background-color: #2C2233; }
     </style>
 
 </head>
 
 <body>
 
-    <div class="f1"></div>
-    <div class="f2"></div>
-    <div class="f3"></div>
-    <div class="f4"></div>
-    <div class="f5"></div>
+    <div class="quadro">
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+        <div class="f5"></div>
+    </div>
 
 </body>
 </html>
